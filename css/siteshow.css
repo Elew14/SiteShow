@@ -1,0 +1,222 @@
+/**
+ * SiteShow STYLE
+ * By Elin Ewald
+ */
+
+body {
+  background-color: white;
+  margin: 0;
+  overflow: hidden;
+  font-family: Calibri, Arial, sans-serif;
+}
+
+
+/**
+ * The menu
+ *
+ */
+
+#nav-menu {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 200px;
+  background-color: #112835;
+  color: #ede6cc;
+  height: 100%;
+  display: block;
+  z-index: 50;
+  border-right: 2px solid  #112835;
+}
+
+.navs {
+  padding: 8px 0px 0px 17px;
+  border-bottom: 1px solid #747e79;  
+  height: 25px;
+}
+
+#nav-1 {
+  background-color: #284e63;
+}
+
+#logo {
+ background-color: #eae3c9;
+ padding: 21px 0px 21px 21px;
+}
+
+#github {
+  padding: 8px 0px 0px 17px; 
+  height: 25px;
+  background-color: #e62727;
+}
+
+#github a {
+  text-decoration: none;
+    color: #ede6cc;
+}
+
+#music-control {
+  position: fixed;
+  bottom: 14px;
+  left: 13px;
+  z-index: 80;
+  font-weight: bold;
+  color: white;
+  font-weight: normal;
+  font-size: 12px;
+  color: #eae3c9;
+}
+
+/**
+ * The slides
+ *
+ */
+
+.slide{
+  position: relative;
+  float: right;
+  right: 0px;
+  width: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: gray;
+}
+
+
+/**
+ * The content
+ *
+ */
+
+.heading {
+  text-align: left;
+  color: black;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  right: 0px;
+  background: rgba(234,230,213,0.9);  
+  /*#eae6d5;*/
+  height: 90px;
+  bottom: 0px;
+}
+
+.heading p {
+  -webkit-margin-before: 0px;
+  padding-left: 40px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  margin-left: 40px;
+  margin-top: 14px;
+}
+
+.title {
+  float: left;
+  /* border-left: 10px solid red; */
+  height: 100%;
+}
+
+.open {
+  float: right;
+  margin-right: 30px;
+  margin-top: 17px;
+}
+
+.content{
+  text-align: left;
+  color: black;
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  bottom: 0px;
+  right: 0px;
+  background: rgba(234,230,213,0.9); 
+  /*background-color: #eae6d5;*/
+  overflow: auto;
+}
+
+#intro {
+   padding: 70px 80px 0px 80px;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.content p {
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+   padding: 10px 80px 0px 80px;
+  -webkit-margin-before: 0px;
+}
+
+.content ul {
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0px 0px 0px 120px;
+  -webkit-margin-before: 0px;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+}
+/*
+#image-1a {
+    background-image: url("img/bild-liten.jpg");
+}
+
+#image-1b {
+    background-image: url("img/test.jpg");
+}*/
+
+#bkg {
+  background-color: black;
+  opacity: 0.6;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+}
+
+table {
+  border: none;
+  margin-top: 50px;
+  margin-left: 80px; 
+  /* to center 
+  margin-left:auto; 
+  margin-right:auto;*/
+}
+
+/**
+ * Other
+ *
+ */
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.clearfix {
+  clear: both;
+}
