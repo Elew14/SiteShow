@@ -1,0 +1,108 @@
+<!-- SiteShow, by Elin Ewald 2015-->
+
+<!doctype html>
+<html lang='en' class='no-js'>
+	<head>
+		<meta charset='utf-8' />
+		<title>SiteShow Example</title>
+		<link rel="stylesheet" type="text/css" href="css/siteshow.css">	
+		<script src="js/jquery.js"></script>
+		<script> 
+			$(document).ready(function() { $('#nav-menu').SiteShow({ 
+				// Changing to custom colors
+				'menu_current_color' : '#284e63',
+        		'logo_background_color' : '#eae3c9',
+        		'content_background_color' : 'rgba(234,230,213,0.9)'
+			}); });
+		</script>
+		<script src="js/siteshow.js"></script>
+	</head>
+
+	<body>
+
+		<div id="bkg"></div>
+			<div id="nav-menu"> 
+			<!-- Byt ut "img/siteshow_logo_small_blue.png" mot sökvägen till din logotyp. --> 
+			<div id="logo"><img src="img/siteshow_logo_small_blue.png"></div> 
+		</div>
+
+		<!-- Varje slide ska ha ett unikt id, syntax: slide-1, slide-2 osv -->
+		<!-- Byt ut "img/bkg-img-1.jpg" mot sökvägen till din bakgrundsbild. Lämna tom om du inte vill ha någon. -->
+		<div id="slide-1" class="slide" data-src="img/bkg-img-1.jpg">
+			<div class='heading'>
+				<div class="title">
+					<!-- Byt ut "Slide 1" mot din rubrik -->
+					<h1>Slide 1</h1>
+					<div class="clearfix"></div>
+					<!-- Byt ut "Underrubrik 1" mot din underrubrik -->
+					<p>Underrubrik 1</p>
+				</div>
+				<img class="open" src="img/open.png">
+			</div>
+			<div class="content">
+				<!-- Byt ut "Exempelintro" mot din introtext -->
+				<p id="intro">Exempelintro</p>
+				<!-- Byt ut "Exempeltext" mot din text -->
+				<p>Exempeltext</p>
+				<!-- Ta bort hela table-elementet om du inte vill ha något bildgalleri i sliden -->
+				<table>
+					<tr>
+						<!-- Fler bilder = fler kodsnuttar som nedan. Kräver unika id, syntax image-slideID-bildID, ex: image-1-1, image-1-2 osv -->
+						<!-- Byt ut "img/gallery-img-1.jpg" mot sökvägen till din bild -->
+						<td><div id='image-1-1' class='image' data-src='img/gallery-img-1.jpg'></div></td>
+						<!-- Byt ut "img/gallery-img-2.jpg" mot sökvägen till din bild -->
+						<td><div id='image-1-2' class='image' data-src='img/gallery-img-2.jpg'></div></td>
+						<!-- Byt ut "img/gallery-img-3.jpg" mot sökvägen till din bild -->
+						<td><div id='image-1-3' class='image' data-src='img/gallery-img-3.jpg'></div></td>
+					<tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- Varje slide ska ha ett unikt id, syntax: slide-1, slide-2 osv -->
+		<!-- Byt ut "bakgrundsbildkälla.jpg" mot sökvägen till din bakgrundsbild. Lämna tom om du inte vill ha någon. -->
+		<div id="slide-2" class="slide" data-src="">
+			<div class='heading'>
+				<div class="title">
+					<!-- Byt ut "Slide 2" mot din rubrik -->
+					<h1>Slide 2</h1>
+					<div class="clearfix"></div>
+					<!-- Byt ut "Underrubrik 2" mot din underrubrik -->
+					<p>Underrubrik 2</p>
+				</div>
+				<img class="open" src="img/open.png">
+			</div>
+			<div class="content">
+				<!-- Byt ut "Exempelintro" mot din introtext -->
+				<p id="intro">Exempelintro</p>
+				<!-- Byt ut "Exempeltext" mot din text -->
+				<p>Exempeltext</p>
+				<!-- Ta bort hela table-elementet om du inte vill ha något bildgalleri i sliden -->
+				<table>
+					<tr>
+						<!-- Fler bilder = fler kodsnuttar som nedan. Kräver unika id, syntax image-slideID-bildID, ex: image-1-1, image-1-2 osv -->
+							<!-- Byt ut "img/gallery-img-1.jpg" mot sökvägen till din bild -->
+						<td><div id='image-2-1' class='image' data-src='img/gallery-img-1.jpg'></div></td>
+						<!-- Byt ut "img/gallery-img-2.jpg" mot sökvägen till din bild -->
+						<td><div id='image-2-2' class='image' data-src='img/gallery-img-2.jpg'></div></td>
+					<tr>
+				</table>
+			</div>
+		</div>
+
+		<div id="music-control"> 
+			<div class="left"><img src="img/volume-on.png"></div> 
+			<!-- Byt ut "Almost a love story <br/>by longzijun" mot titeln på din låt --> 
+			<div class="right">Almost a love story <br/>by longzijun</div> 
+		</div> 
+
+		<audio autoplay loop id="music"> 
+			<!-- Byt ut "audio/bkg_audio1.mp3" mot sökvägen till din låt -->
+			<source src="audio/bkg_audio1.mp3"> 
+		</audio>
+	
+	</body>
+	<footer>
+	</footer>
+
+</html>
